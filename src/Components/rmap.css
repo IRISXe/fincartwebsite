@@ -1,0 +1,22 @@
+/* Wrapper for Responsive Map */
+.responsive-map {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded edges for a polished look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+  
+  /* Styling for the iframe */
+  .responsive-map iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px; /* Ensures iframe matches wrapper */
+  }
+  

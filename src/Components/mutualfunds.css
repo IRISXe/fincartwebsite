@@ -1,0 +1,107 @@
+/* General Styles */
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Hero Section */
+  .backimage {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .backimage::before {
+    content: '';
+    background-image: url('../Components/imgs/dimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.25;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #ffffff; /* White text for dark theme */
+  }
+  
+  .hero-subtext {
+    font-size: 18px;
+    color: #e0e0e0; /* Light text for dark theme */
+    margin-top: 20px;
+  }
+  
+  /* Section Styles */
+  .section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background for sections */
+    border-radius: 10px;
+  }
+  
+  .section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text for headings */
+  }
+  
+  .section-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #b0b0b0; /* Lighter text for readability */
+  }
+  
+  /* Image Styles */
+  .image-section {
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Benefit List */
+  .benefit-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #b0b0b0; /* Lighter text for readability */
+  }
+  
+  .benefit-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Button Styles */
+  button {
+    border-radius: 25px;
+    background-color: gold;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    margin: 0px 0px 10px 30px;
+    color: #121212; /* Dark text for button */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ffd700; /* Slightly darker gold on hover */
+  }

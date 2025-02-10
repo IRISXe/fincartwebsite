@@ -1,0 +1,197 @@
+/* Overall Dark Background */
+body {
+    background-color: #0d1117; /* Darker gray for professional tone */
+    color: #c9d1d9; /* Soft white for text */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.bimg {
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bimg::before {
+    content: '';
+    background-image: url('../Components/imgs/jimg.jpg'); /* Replace with your dark-themed image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    filter: grayscale(50%);
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 18px;
+    color: #b1b1b1;
+    position: relative;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Background Section */
+.bgrnd {
+    background-color: #161b22;
+    min-height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.bgrnd h3 {
+    color: #e6a917;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.tbox,
+.fbox {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tbox {
+    background-color: #21262d;
+    color: #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.tbox p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #b1b1b1;
+}
+
+.fbox {
+    background-color: #292e36;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.field {
+    width: 90%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #444;
+    background-color: #161b22;
+    color: #c9d1d9;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    border-radius: 6px;
+    outline: none;
+}
+
+.field:focus {
+    outline: none;
+    border: 1px solid #e6a917;
+    background-color: #1f252b;
+}
+
+.fbox button {
+    width: 90%;
+    background-color: #e6a917;
+    color: #0d1117;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    margin: 20px 0 0;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fbox button:hover {
+    background-color: #f0c741;
+    color: #000;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #21262d;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.contact-item .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #e6a917;
+}
+
+.contact-item h3 {
+    color: #e6a917;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #b1b1b1;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 940px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-item {
+        width: 85%;
+        margin: auto;
+    }
+}

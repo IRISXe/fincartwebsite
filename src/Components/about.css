@@ -1,0 +1,122 @@
+/* Global Styles */
+.about-container {
+    background-color: #1A1A1A; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hero Section */
+  .backimg {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+  }
+  
+  .backimg::before {
+    content: '';
+    background-image: url('../Components/imgs/bimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4; /* Adjust opacity for better text visibility */
+    z-index: 1; /* Ensure the image is behind the text */
+  }
+  
+  .backimg .text {
+    position: relative;
+    z-index: 2; /* Ensure text is above the image */
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .backimg h1 {
+    font-size: 50px;
+    color: #FFFFFF; /* White for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+  }
+  
+  .backimg p {
+    font-size: 18px;
+    color: #FFFFFF; /* White for better contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+  }
+  
+  /* Investment Planning Section */
+  .investment-section {
+    padding: 50px 0;
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent dark background */
+  }
+  
+  .investment-section h2 {
+    color: #FFD700; /* Gold for headings */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .investment-section p {
+    font-size: 16px;
+    color: #E0E0E0; /* Light gray text */
+    text-align: left;
+  }
+  
+  /* Choosing the Best Provider Section */
+  .provider-section {
+    background-color: rgba(44, 62, 80, 0.9); /* Semi-transparent dark blue-gray */
+    padding: 50px 0;
+  }
+  
+  .provider-section h2 {
+    color: #FFD700; /* Gold for headings */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .provider-section p {
+    font-size: 16px;
+    color: #E0E0E0; /* Light gray text */
+    text-align: left;
+  }
+  
+  /* SIP Investment Section */
+  .sip-section {
+    padding: 50px 0;
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent dark background */
+  }
+  
+  .sip-section h2 {
+    color: #FFD700; /* Gold for headings */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .sip-section p {
+    font-size: 16px;
+    color: #E0E0E0; /* Light gray text */
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .backimg h1 {
+      font-size: 36px;
+    }
+  
+    .backimg p {
+      font-size: 16px;
+    }
+  
+    .investment-section p,
+    .provider-section p,
+    .sip-section p {
+      font-size: 14px;
+    }
+  }

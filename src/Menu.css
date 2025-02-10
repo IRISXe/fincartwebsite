@@ -1,0 +1,89 @@
+/* Navbar Styling */
+.navbar {
+  padding: 1rem 0;
+  background-color: #121212; /* Pure dark background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Deeper shadow for a polished look */
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  height: 50px; /* Adjust logo size */
+  width: auto;
+}
+
+/* Nav Links Styling */
+.nav-link {
+  color: #BFBFBF !important; /* Soft Gray for text */
+  font-size: 16px;
+  margin: 0 12px;
+  text-transform: uppercase; /* Adds professionalism */
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFD700 !important; /* Gold on hover */
+  border-bottom: 2px solid #FFD700; /* Adds a gold underline effect */
+}
+
+.nav-link.active {
+  color: #FFD700 !important; /* Gold for active link */
+  font-weight: bold;
+  border-bottom: 2px solid #FFD700; /* Consistent underline for active */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  border: none;
+  background-color: #1E1E1E; /* Slightly lighter dark background for dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: #BFBFBF; /* Soft Gray for dropdown text */
+  font-size: 15px;
+  padding: 10px 16px;
+  border-radius: 4px; /* Adds smooth corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #272727; /* Slightly lighter dark hover background */
+  color: #FFD700; /* Gold on hover */
+}
+
+/* Navbar Toggler Icon Styling */
+.navbar-toggler {
+  border: none;
+  color: #E0E0E0; /* Soft Gray for toggler icon */
+  font-size: 1.2rem; /* Larger for better visibility */
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: rotate(90deg); /* Adds a smooth rotation effect */
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 1rem;
+    text-align: center; /* Centers links in collapsed view */
+  }
+
+  .nav-link {
+    margin: 8px 0;
+    font-size: 18px; /* Increases font size for mobile */
+  }
+
+  .dropdown-menu {
+    margin-left: 0; /* Align dropdown properly on mobile */
+  }
+}
